@@ -23,6 +23,10 @@
     <color name="theme_accent">#04561A</color>
     <color name="ltgray">#ffe0e0e0</color>
     <color name="black">#111111</color>
+    <color name="white">#ffffff</color>
     <color name="maroon">#8B0000</color>
+
+    <color name="theme_blue_dark">#000080</color>
+    <color name="theme_blue">#4c4ca6</color>
 
 </resources>

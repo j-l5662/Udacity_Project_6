@@ -9,6 +9,7 @@
         android:id="@+id/app_bar_layout"
         android:layout_width="match_parent"
         android:layout_height="196dp"
+        android:elevation="@dimen/app_bar_elevation"
         android:theme="@style/ThemeOverlay.AppCompat.Light">
 
         <android.support.design.widget.CollapsingToolbarLayout
@@ -21,11 +22,6 @@
             app:scrimAnimationDuration="500"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-            <!--<FrameLayout-->
-                <!--android:id="@+id/photo_container"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:background="@color/photo_placeholder">-->
             <ImageView
                 android:id="@+id/photo"
                 android:layout_width="match_parent"
@@ -34,12 +30,12 @@
                 app:layout_collapseParallaxMultiplier=".7"
                 android:transitionName="@string/transition_name"
                 android:scaleType="centerCrop"/>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="196dp"
-                    android:background="@drawable/photo_background_protection" />
 
-            <!--</FrameLayout>-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="196dp"
+                android:background="@drawable/photo_background_protection" />
+
                 <android.support.v7.widget.Toolbar
                     android:id="@+id/tool_bar"
                     android:layout_width="match_parent"
@@ -51,18 +47,6 @@
 
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
-
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_gravity="center_horizontal"-->
-
-            <!--android:elevation="2dp"-->
-            <!--android:maxWidth="@dimen/detail_card_max_width"-->
-            <!--android:orientation="vertical">-->
-
-    <!--</LinearLayout>-->
-
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/article_body"
@@ -78,13 +62,14 @@
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/share_fab"
         android:stateListAnimator="@anim/fab_state_list_anim"
-        app:backgroundTint="@color/maroon"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:src="@drawable/ic_share"
         android:elevation="@dimen/fab_elevation"
         android:contentDescription="@string/action_share"
+        android:translationZ="@dimen/fab_press_translation_z"
+        app:backgroundTint="@color/maroon"
         app:layout_anchorGravity="bottom|end"
         app:layout_anchor="@id/app_bar_layout"/>
 

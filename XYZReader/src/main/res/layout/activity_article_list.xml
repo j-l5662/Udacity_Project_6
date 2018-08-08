@@ -27,16 +27,16 @@
         android:id="@+id/toolbar_container"
         android:layout_width="match_parent"
         android:layout_height="72dp"
-        style="@style/List_Header_Style"
+        android:background="@color/theme_blue_dark"
         android:elevation="8dp">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
-            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             android:layout_marginLeft="@dimen/list_toolbar_side_margin"
             android:layout_marginRight="@dimen/list_toolbar_side_margin"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
+
             android:layout_gravity="top">
 
             <ImageView
