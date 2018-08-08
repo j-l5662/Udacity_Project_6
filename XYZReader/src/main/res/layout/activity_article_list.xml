@@ -9,7 +9,7 @@
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/ltgray">
+        style="@style/List_Background_Style">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view"
@@ -26,8 +26,8 @@
     <FrameLayout
         android:id="@+id/toolbar_container"
         android:layout_width="match_parent"
-        android:layout_height="112dp"
-        android:background="@color/theme_primary_dark"
+        android:layout_height="72dp"
+        style="@style/List_Header_Style"
         android:elevation="8dp">
 
         <android.support.v7.widget.Toolbar
@@ -42,6 +42,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
                 android:src="@drawable/logo"
                 android:contentDescription="@string/app_name" />
 

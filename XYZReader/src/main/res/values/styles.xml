@@ -23,5 +23,22 @@
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+    
+    <style name="Reader_Text_View">
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="List_Header_Style">
+        <item name="android:background">#000080</item>
+    </style>
+
+    <style name="List_Background_Style">
+        <item name="android:background">#4c4ca6</item>
+    </style>
+
+    <style name="List_Title_Text_View">
+        <item name="android:textColor">#000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 
 </resources>
